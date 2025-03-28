@@ -33,6 +33,36 @@ export const createPost = async (req, res) => {
   }
 };
 
+export const updatePost = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, content, category, tags } = req.body;
+
+    const postToUpdate = await Post.findByPk(id);
+
+    if (!postToUpdate)
+      return res.status(404).json({ message: "404 Post Not Found" });
+
+    const updatedPost = await Post.update(
+      {
+        title,
+        content,
+        category,
+        tags,
+      },
+      {
+        where: {
+          id: id,
+        },
+      }
+    );
+
+    res.status(200).json({ message: "Post updated successfully" });
+  } catch (err) {
+    res.status(400).json({ message: "Bad request" });
+  }
+};
+
 export const deletePost = async (req, res) => {
   try {
     const { id } = req.params;

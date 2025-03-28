@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-import Post from "../models/post.js"
+import Post from "../models/post.js";
 
 import Sequelize from "sequelize";
 
@@ -18,13 +18,6 @@ const sequelize = new Sequelize(
 sequelize
   .sync({ force: false })
   .then(() => {
-    return Post.create({
-      name: "stefan",
-      title: "stefan",
-      content: "programmer",
-      category: "tech",
-      tags: "code",
-    });
     console.log("Database synced");
   })
   .catch((err) => console.log("Error syncing database: ", err));

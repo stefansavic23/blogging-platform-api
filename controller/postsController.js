@@ -32,3 +32,18 @@ export const createPost = async (req, res) => {
     res.json({ message: "Failed with creating post" });
   }
 };
+
+export const deletePost = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const postToDelete = await Post.findByPk(id);
+
+    if (!postToDelete)
+      return res.status(404).json({ message: "404 Post Not Found" });
+
+    const deletedPost = await postToDelete.destroy();
+    res.status(204).json({ message: "Post deleted successfully" });
+  } catch (err) {
+    res.status(404).json({ message: "404 Post Not Found" });
+  }
+};

@@ -35,7 +35,8 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
    DB_DIALECT = your_database_dialect
 
 ## Usage
-
 Start the server 
-```sh
-npm start
+   ```sh
+   npm start
+
+

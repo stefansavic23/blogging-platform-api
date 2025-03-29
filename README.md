@@ -36,8 +36,8 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
    
 ---
 
-## Usage
-   Start the server:
+## Usage1
+1. Start the server:
    ```sh
    npm start
 

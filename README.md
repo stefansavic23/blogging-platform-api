@@ -46,6 +46,7 @@ The APi will runn at: http://localhost:8080
 
 ## API Endpoints
 
+<div style="center">
 | Method | Endpoint       | Description                   |
 |--------|----------------|-------------------------------|
 | `GET`  | `/`            | welcome                       |
@@ -55,7 +56,7 @@ The APi will runn at: http://localhost:8080
 | `POST` | `/posts`       | Create a new post             |
 | `PUT`  | `/posts/:id`   | Update an existing post       |
 |`DELETE`| `/posts/:id`   | Delete a post                 |
-
+</div>
 ---
 
 ## Tech Stack

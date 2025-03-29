@@ -40,6 +40,19 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
 1. Start the server:
    ```sh
    npm start
+The APi will runn at: http://localhost:8080
 
+---
+
+## API Endpoints
+
+| Method | Endpoint       | Description                   |
+|--------|----------------|-------------------------------|
+| `GET`  | `/posts/all`   | Get all blog posts            |
+| `GET`  | `/posts/:id`   | Get a single post by ID       |
+| `GET`  | `/posts/?tag=` | Get a single post by tag      |
+| `POST` | `/posts`       | Create a new post             |
+| `PUT`  | `/posts/:id`   | Update an existing post       |
+|`DELETE`| `/posts/:id`   | Delete a post                 |
 
 

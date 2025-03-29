@@ -17,4 +17,4 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/blogging-platform-api.git
+   git clone https://github.com/stefansavic23/blogging-platform-api.git

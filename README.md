@@ -48,6 +48,7 @@ The APi will runn at: http://localhost:8080
 
 | Method | Endpoint       | Description                   |
 |--------|----------------|-------------------------------|
+| `GET`  | `/`            | welcome                       |
 | `GET`  | `/posts/all`   | Get all blog posts            |
 | `GET`  | `/posts/:id`   | Get a single post by ID       |
 | `GET`  | `/posts/?tag=` | Get a single post by tag      |
@@ -55,4 +56,12 @@ The APi will runn at: http://localhost:8080
 | `PUT`  | `/posts/:id`   | Update an existing post       |
 |`DELETE`| `/posts/:id`   | Delete a post                 |
 
+---
+
+## Tech Stack
+
+- [] Node.js
+- [] Express.js
+- [] Sequelize (MySQL)
+- [] dotenv (Environment variables)
 

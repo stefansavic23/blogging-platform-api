@@ -33,12 +33,18 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
    DB_HOST = your_database_host 
    DB_PORT = your_database_port
    DB_DIALECT = your_database_dialect
+   
+---
 
 ## Usage
-   Start the server 
+   Start the server:
    ```sh
    npm start
 
-1.sdsa f
 
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
+| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
+| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 |
 

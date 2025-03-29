@@ -22,6 +22,22 @@ export const getPostByID = async (req, res) => {
   }
 };
 
+export const getPostByTag = async (req, res) => {
+  try {
+    const tags = req.query.tag;
+
+    const posts = await Post.findAll({ where: { tags } });
+
+    if (posts.length === 0) {
+      return res.status(404).json({ message: "Post Not found" });
+    }
+
+    res.status(200).json({ posts });
+  } catch (err) {
+    res.json({ message: "error" });
+  }
+};
+
 export const createPost = async (req, res) => {
   try {
     const { title, content, category, tags } = req.body;

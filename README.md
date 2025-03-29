@@ -36,7 +36,7 @@ A simple blogging platform API built with Node.js, Express, and Sequelize.
    
 ---
 
-## Usage1
+## Usage
 1. Start the server:
    ```sh
    npm start
@@ -60,8 +60,8 @@ The APi will runn at: http://localhost:8080
 
 ## Tech Stack
 
-- [] Node.js
-- [] Express.js
-- [] Sequelize (MySQL)
-- [] dotenv (Environment variables)
+- Node.js
+- Express.js
+- Sequelize (MySQL)
+- dotenv (Environment variables)
 
